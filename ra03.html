@@ -1,0 +1,24 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.1/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body>
+
+    <a-scene embedded arjs="sourceType: webcam;">
+        <a-marker type='pattern' url='./modelos/a.patt'>
+            <a-entity scale="0.1 0.1 0.1" obj-model="obj: url(./modelos/aviao1.obj); mtl: url(./modelos/aviao1.mtl)"> </a-entity>
+        </a-marker>
+        <a-entity camera>
+        </a-entity>
+    </a-scene>
+
+
+</body>
+
+</html>

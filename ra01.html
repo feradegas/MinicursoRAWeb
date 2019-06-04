@@ -1,0 +1,43 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.1/aframe/build/aframe-ar.js"></script>
+</head>
+
+ <body>
+  
+    <a-scene embedded arjs="sourceType: webcam;">
+        <a-marker type='pattern' url='./modelos/e.patt'>
+            <a-entity scale="0.1 0.1 0.1" obj-model="obj: url(./modelos/estrela2.obj); mtl: url(./modelos/estrela2.mtl)"> </a-entity>
+        </a-marker>
+        <a-entity camera>
+        </a-entity> 
+
+    </a-scene>
+
+
+</body> 
+
+<!--<script src=”https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<script src=”https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+<body style=margin : 0px; overflow: hidden;>
+  <a-scene embedded arjs="sourceType: webcam;">
+      <a-marker preset='e.patt'>
+        <!-- Adding an OBJ file to an AR Project-->
+      <!-- <a-entity 
+            obj-model="obj: url(estrela1.obj)"; 
+            mtl: url(estrela1.mtl)>
+        </a-entity>
+              
+      </a-marker>
+  <a-entity camera>
+  </a-entity>
+  </a-scene>
+</body> -->
+
+</html>
